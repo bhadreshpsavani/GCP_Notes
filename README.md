@@ -9,6 +9,10 @@
   gcloud config set compute/region $REGION
   ```
   
+## Bucket
+
+* Set Retention Policy to the bucket `gsutil retention set 10s "gs://$BUCKET"`
+
 ## Bigquery
 
 Create a bigquery dataset: `bq mk --location=$REGION --dataset orders`
