@@ -46,3 +46,11 @@ Create a bigquery dataset: `bq mk --location=$REGION --dataset orders`
     --resource-name=projects/$PROJECT_ID/datasets/orders \
     --discovery-enabled 
   ```
+* Detech an Asset
+  `gcloud dataplex assets delete orders-curated-dataset --location=$REGION --zone=orders-curated-zone --lake=ecommerce`
+  
+* Delete Zone
+  `gcloud dataplex zones delete orders-curated-zone --location=$REGION --lake=ecommerce`
+  
+* Delete Lake
+  `gcloud dataplex lakes delete ecommerce --location=$REGION`
