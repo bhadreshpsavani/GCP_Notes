@@ -12,6 +12,7 @@
 ## Bucket
 
 * Set Retention Policy to the bucket `gsutil retention set 10s "gs://$BUCKET"`
+* grant all users read permission for the object stored in your bucket, which will make it publicly available `gsutil acl ch -u AllUsers:R gs://$BUCKET/ada.jpg`
 
 ## Bigquery
 
