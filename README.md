@@ -51,6 +51,13 @@ Create a bigquery dataset: `bq mk --location=$REGION --dataset orders`
     --resource-name=projects/$PROJECT_ID/datasets/orders \
     --discovery-enabled 
   ```
+
+* Create a service account
+  ```
+  export SA_NAME="document-ai-service-account"
+  gcloud iam service-accounts create $SA_NAME --display-name $SA_NAME
+  ```
+  
 * Detech an Asset
   `gcloud dataplex assets delete orders-curated-dataset --location=$REGION --zone=orders-curated-zone --lake=ecommerce`
   
