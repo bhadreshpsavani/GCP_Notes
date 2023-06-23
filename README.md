@@ -8,7 +8,12 @@
   export REGION=us-west1
   gcloud config set compute/region $REGION
   ```
-  
+* Addition of new roles
+  ```
+  export PROJECT_ID=$(gcloud config get-value project)
+  export USER_ACCOUNT=$(gcloud config get-value core/account)
+  gcloud projects add-iam-policy-binding $PROJECT_ID --member=user:$USER_ACCOUNT --role=roles/aiplatform.admin
+  ```
 ## Bucket
 
 * Set Retention Policy to the bucket `gsutil retention set 10s "gs://$BUCKET"`
