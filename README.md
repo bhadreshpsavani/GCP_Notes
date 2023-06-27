@@ -9,6 +9,7 @@
 * Airflow
 * Vertex AI
 * DataProc
+* DaraPrep: An intelligent data service for visually exploring, cleaning, and preparing data for analysis. Cloud Dataprep is serverless and works at any scale. There is no infrastructure to deploy or manage. Easy data preparation with clicks and no code!
 * DataFlow
 * PubSum
 * Bigquery
