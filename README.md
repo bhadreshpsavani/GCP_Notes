@@ -1,5 +1,21 @@
 # GCP_Notes
 
+## Skills
+
+* Storage
+* Cloud Function
+* Kubeflow
+* Kubernates
+* Airflow
+* Vertex AI
+* DataProc
+* DataFlow
+* PubSum
+* Bigquery
+* Source Repository
+* Artifact Store
+* Metadata
+  
 ## Project and region setting
 
 * project  setting: `export PROJECT_ID=$(gcloud config get-value project)`
