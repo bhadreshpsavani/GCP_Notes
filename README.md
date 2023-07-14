@@ -16,6 +16,9 @@
 * Source Repository
 * Artifact Store
 * Metadata
+
+## Conceptual:
+* Google Cloud Run is very similar to App Engine standard environment, except that Cloud Run allows you to bring your own container (BYOC).
   
 ## Project and region setting
 
