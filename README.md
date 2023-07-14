@@ -31,6 +31,14 @@
   export USER_ACCOUNT=$(gcloud config get-value core/account)
   gcloud projects add-iam-policy-binding $PROJECT_ID --member=user:$USER_ACCOUNT --role=roles/aiplatform.admin
   ```
+
+## VM
+
+* Creating VM
+  `gcloud compute instances create gcelab2 --machine-type e2-medium --zone=$ZONE`
+
+* SSH VM
+  `gcloud compute ssh gcelab2 --zone=$ZONE`
 ## Bucket
 
 * Set Retention Policy to the bucket `gsutil retention set 10s "gs://$BUCKET"`
