@@ -19,7 +19,7 @@
 
 ## Conceptual:
 * Google Cloud Run is very similar to App Engine standard environment, except that Cloud Run allows you to bring your own container (BYOC).
-* Normally you would have to take a two step approach that entails building a docker container and pushing it to a registry to store the image for GKE to pull from. Make life easier and use Cloud Build to build the Docker container and put the image in Artifact Registry with a single command!
+* Normally you would have to take a two step approach that entails building a docker container and pushing it to a registry to store the image for GKE to pull from. Make life easier and use Cloud Build to build the Docker container and put the image in Artifact Registry with a single command! Cloud Build will compress the files from the directory and move them to a Cloud Storage bucket. The build process will then take all the files from the bucket and use the Dockerfile, which is present in the same directory, to run the Docker build process.
   
 ## Project and region setting
 
