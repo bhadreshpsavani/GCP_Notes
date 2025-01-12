@@ -100,3 +100,11 @@ Create a bigquery dataset: `bq mk --location=$REGION --dataset orders`
   
 * Delete Lake
   `gcloud dataplex lakes delete ecommerce --location=$REGION`
+
+
+## ACE Exam Notes:
+
+* Cloud SQL for small relational data, scaled manually
+* Cloud Spanner for relational data, scaled automatically
+* Cloud Firestore for app-based data for non relational data (noSql)
+* Cloud Datastore for non-relational data
